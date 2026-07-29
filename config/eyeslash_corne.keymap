@@ -183,31 +183,31 @@
         RSuper {
             bindings = <&kp RIGHT_WIN>;
             key-positions = <26 23>;
-            layers = <3 0 4 5>;
+            layers = <3 0 4 5 8>;
         };
 
         RCtrl {
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <25 26>;
-            layers = <3 0 4 5>;
+            layers = <3 0 4 5 8>;
         };
 
         RShift {
             bindings = <&td0>;
             key-positions = <24 25>;
-            layers = <3 0 4 5>;
+            layers = <3 0 4 5 8>;
         };
 
         RAlt {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <23 24>;
-            layers = <3 0 4 5>;
+            layers = <3 0 4 5 8>;
         };
 
         Mouselock {
             bindings = <&tog 1>;
             key-positions = <43 17>;
-            layers = <1 4 3 5 9 0 8>;
+            layers = <1 4 3 5 9 0>;
         };
 
         FunLock {
@@ -237,7 +237,7 @@
         LDefault {
             bindings = <&to 0>;
             key-positions = <13 17>;
-            layers = <0 1 3 4 5 9 6 2 7 8>;
+            layers = <0 1 3 4 5 9 6 2 7>;
         };
 
         RDefault {
@@ -256,12 +256,6 @@
             bindings = <&key_repeat>;
             key-positions = <37 38>;
             layers = <9 3 4 5 1 0>;
-        };
-
-        GameLock {
-            bindings = <&tog 8>;
-            key-positions = <23 46>;
-            layers = <1 4 3 5 6 0 8>;
         };
     };
 
@@ -383,9 +377,9 @@
         Gamepad {
             display-name = "GAMING";
             bindings = <
-&trans  &trans  &kp E   &kp W    &trans     &trans                                   &mmv MOVE_UP                     &mkp MB1   &mkp MB2   &kp UP_ARROW   &trans     &trans  &trans
-&trans  &kp F   &kp A   &kp S    &kp D      &trans                   &mmv MOVE_LEFT  &tog 8          &mmv MOVE_RIGHT  &trans     &kp LEFT   &kp DOWN       &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans   &trans     &trans     &kp K_MUTE                    &mmv MOVE_DOWN                   &trans     &trans     &trans         &trans     &trans  &trans
+&trans  &trans  &kp E   &kp W    &trans     &trans                                   &mmv MOVE_UP                     &mkp MB1   &kp F7     &kp F8         &kp F9  &kp F12  &trans
+&trans  &kp F   &kp A   &kp S    &kp D      &trans                   &mmv MOVE_LEFT  &tog 8          &mmv MOVE_RIGHT  &trans     &kp F4     &kp F5         &kp F6  &kp F11  &trans
+&trans  &trans  &trans  &trans   &trans     &trans     &kp K_MUTE                    &mmv MOVE_DOWN                   &trans     &kp F1     &kp F2         &kp F3  &kp F10  &trans
                         &kp TAB  &kp SPACE  &kp ENTER                                                                 &kp ENTER  &kp SPACE  &kp BACKSPACE
             >;
 
