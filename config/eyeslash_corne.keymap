@@ -365,7 +365,7 @@
                               &trans           &trans          &trans                                                   &trans  &trans        &trans
             >;
 
-            sensor-bindings = <&rotary_bt>;
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRI_DEC>;
         };
 
         RGB {
