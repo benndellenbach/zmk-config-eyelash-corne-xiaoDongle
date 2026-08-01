@@ -5,7 +5,6 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -183,31 +182,31 @@
         RSuper {
             bindings = <&kp RIGHT_WIN>;
             key-positions = <26 23>;
-            layers = <3 0 4 5 8>;
+            layers = <3 0 4 5 7>;
         };
 
         RCtrl {
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <25 26>;
-            layers = <3 0 4 5 8>;
+            layers = <3 0 4 5 7>;
         };
 
         RShift {
             bindings = <&td0>;
             key-positions = <24 25>;
-            layers = <3 0 4 5 8>;
+            layers = <3 0 4 5 7>;
         };
 
         RAlt {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <23 24>;
-            layers = <3 0 4 5 8>;
+            layers = <3 0 4 5 7>;
         };
 
         Mouselock {
             bindings = <&tog 1>;
             key-positions = <43 17>;
-            layers = <1 4 3 5 9 0>;
+            layers = <1 4 3 5 8 0>;
         };
 
         FunLock {
@@ -237,25 +236,25 @@
         LDefault {
             bindings = <&to 0>;
             key-positions = <13 17>;
-            layers = <0 1 3 4 5 9 6 2 7>;
+            layers = <0 1 3 4 5 8 6 2>;
         };
 
         RDefault {
             bindings = <&to 0>;
             key-positions = <23 27>;
-            layers = <9 1 3 0 4 5 6 2 7 8>;
+            layers = <8 1 3 0 4 5 6 2 7>;
         };
 
         LRPT {
             bindings = <&key_repeat>;
             key-positions = <31 32>;
-            layers = <9 3 4 5 1 0>;
+            layers = <8 3 4 5 1 0>;
         };
 
         RRPT {
             bindings = <&key_repeat>;
             key-positions = <37 38>;
-            layers = <9 3 4 5 1 0>;
+            layers = <8 3 4 5 1 0>;
         };
     };
 
@@ -282,9 +281,9 @@
             display-name = "QWERTY";
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E      &kp R        &kp T                           &kp UP               &kp Y         &kp U        &kp I            &kp O    &kp P     &kp DELETE
-&td0       &kp A  &kp S  &kp D      &kp F        &kp G                 &kp LEFT  &tog 7    &kp RIGHT  &kp H         &kp J        &kp K            &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C      &kp V        &kp B        &to 8              &kp DOWN             &kp N         &kp M        &kp COMMA        &kp DOT  &kp FSLH  &kp ESC
-                         &lt 5 TAB  &lt 1 SPACE  &lt 4 ENTER                                          &lt 3 RETURN  &lt 8 SPACE  &lt 6 BACKSPACE
+&td0       &kp A  &kp S  &kp D      &kp F        &kp G                 &kp LEFT  &trans    &kp RIGHT  &kp H         &kp J        &kp K            &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C      &kp V        &kp B        &to 7              &kp DOWN             &kp N         &kp M        &kp COMMA        &kp DOT  &kp FSLH  &kp ESC
+                         &lt 5 TAB  &lt 1 SPACE  &lt 4 ENTER                                          &lt 3 RETURN  &lt 7 SPACE  &lt 6 BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
@@ -353,32 +352,20 @@
         MediaControls {
             display-name = "MEDIA";
             bindings = <
-&trans  &trans  &trans        &trans           &bt BT_CLR_ALL  &ext_power EP_TOG                        &trans          &trans  &trans        &trans        &trans        &trans  &trans
-&trans  &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &bt BT_NXT      &out OUT_TOG                     &trans  &trans  &trans  &trans  &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans  &trans
-&trans  &trans  &trans        &trans           &bt BT_CLR      &trans             &SYSTO 0 9            &trans          &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans
-                              &trans           &trans          &trans                                                   &trans  &trans        &trans
+&trans  &trans  &trans  &trans        &trans        &rgb_ug RGB_SPI                                      &rgb_ug RGB_SAI                   &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans  &trans
+&trans  &trans  &trans  &trans        &bt BT_NXT    &rgb_ug RGB_SPD                     &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &trans  &bt BT_SEL 3  &bt BT_SEL 4    &trans        &trans  &trans
+&trans  &trans  &trans  &trans        &trans        &trans           &rgb_ug RGB_TOG                     &rgb_ug RGB_SAD                   &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &trans  &trans
+                        &out OUT_USB  &out OUT_TOG  &out OUT_BLE                                                                           &trans  &trans        &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRI_DEC>;
-        };
-
-        RGB {
-            display-name = "RGB";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                      &rgb_ug RGB_BRI                   &trans  &trans           &trans           &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                     &rgb_ug RGB_SAD  &trans           &rgb_ug RGB_SAI  &trans  &rgb_ug RGB_EFF  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &rgb_ug RGB_TOG                     &rgb_ug RGB_BRD                   &trans  &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &trans  &trans
-                        &trans  &trans  &trans                                                                        &trans  &trans           &trans
-            >;
-
-            sensor-bindings = <&RGBHUE>;
+            sensor-bindings = <&rgb_encoder>;
         };
 
         Gamepad {
             display-name = "GAMING";
             bindings = <
 &trans  &trans  &kp E   &kp W    &trans     &trans                              &kp C_BRIGHTNESS_INC                   &mkp MB1   &kp F7     &kp F8         &kp F9  &kp F12  &trans
-&trans  &kp F   &kp A   &kp S    &kp D      &trans              &mmv MOVE_LEFT  &tog 9                &mmv MOVE_RIGHT  &trans     &kp F4     &kp F5         &kp F6  &kp F11  &trans
+&trans  &kp F   &kp A   &kp S    &kp D      &trans              &mmv MOVE_LEFT  &tog 8                &mmv MOVE_RIGHT  &trans     &kp F4     &kp F5         &kp F6  &kp F11  &trans
 &trans  &trans  &trans  &trans   &trans     &trans     &to 0                    &kp C_BRIGHTNESS_DEC                   &trans     &kp F1     &kp F2         &kp F3  &kp F10  &trans
                         &kp TAB  &kp SPACE  &kp ENTER                                                                  &kp ENTER  &kp SPACE  &kp BACKSPACE
             >;
@@ -390,7 +377,7 @@
             display-name = "FPS";
             bindings = <
 &trans  &trans  &kp E   &kp W    &trans     &trans                                   &kp UP_ARROW             &trans          &mkp MB4        &mmv MOVE_UP     &mkp MB5         &trans           &trans
-&trans  &kp F   &kp A   &kp S    &kp D      &trans                   &kp LEFT_ARROW  &trans        &kp RIGHT  &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans           &trans
+&trans  &kp F   &kp A   &kp S    &kp D      &trans                   &kp LEFT_ARROW  &tog 8        &kp RIGHT  &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans           &trans
 &trans  &trans  &trans  &trans   &trans     &trans     &kp K_MUTE                    &kp DOWN                 &msc SCRL_LEFT  &msc SCRL_DOWN  &mkp MB3         &msc SCRL_UP     &msc SCRL_RIGHT  &trans
                         &kp TAB  &kp SPACE  &kp ENTER                                                         &mkp RCLK       &mkp LCLK       &kp RIGHT_SHIFT
             >;
@@ -403,8 +390,8 @@
         compatible = "zmk,conditional-layers";
 
         FPS {
-            if-layers = <8 1>;
-            then-layer = <9>;
+            if-layers = <7 1>;
+            then-layer = <8>;
         };
     };
 };
