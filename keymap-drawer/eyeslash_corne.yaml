@@ -399,7 +399,7 @@ layers:
   - W
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - $$mdi:brightness-5$$
   - '&mkp MB1'
   - F7
   - F8
@@ -413,7 +413,7 @@ layers:
   - D
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: GAMING, h: toggle}
+  - {t: FPS, h: toggle}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - F4
@@ -427,8 +427,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - MUTE
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: QWERTY, h: toggle}
+  - $$mdi:brightness-7$$
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
