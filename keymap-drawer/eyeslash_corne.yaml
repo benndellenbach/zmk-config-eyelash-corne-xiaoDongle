@@ -54,7 +54,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - FMOUSE
+  - {t: '$$mdi:transfer$$', type: trans}
   - END
   - Ctl+$$mdi:arrow-up-bold$$
   - Sft+Ctl+V
@@ -98,55 +98,6 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  FMOUSE:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-right-click-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Z
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
-  - Ctl+Y
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - $$mdi:pan-left$$
-  - $$mdi:pan-down$$
-  - '&mkp MB3'
-  - $$mdi:pan-up$$
-  - $$mdi:pan-right$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&mkp MB2'
-  - $$mdi:mouse-left-click-outline$$
-  - '&mkp MB3'
   FUN:
   - PG UP
   - F12
@@ -198,10 +149,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   NUMPAD:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F12
+  - F9
+  - F8
+  - F7
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-up$$
   - {t: '[', s: '{'}
@@ -211,10 +162,10 @@ layers:
   - {t: ']', s: '}'}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F11
+  - F6
+  - F5
+  - F4
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-left$$
   - $$mdi:mouse-left-click-outline$$
@@ -226,10 +177,10 @@ layers:
   - ':'
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F10
+  - F3
+  - F2
+  - F1
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-down$$
@@ -483,10 +434,10 @@ combos:
   l: [MEDIA, QWERTY]
 - p: [13, 17]
   k: {t: QWERTY, h: toggle}
-  l: [QWERTY, MOUSE, FUN, NUMPAD, SYMBOL, FPS, MEDIA, FMOUSE]
+  l: [QWERTY, MOUSE, FUN, NUMPAD, SYMBOL, FPS, MEDIA]
 - p: [23, 27]
   k: {t: QWERTY, h: toggle}
-  l: [FPS, MOUSE, FUN, QWERTY, NUMPAD, SYMBOL, MEDIA, FMOUSE, GAMING]
+  l: [FPS, MOUSE, FUN, QWERTY, NUMPAD, SYMBOL, MEDIA, GAMING]
 - p: [31, 32]
   k: '&key_repeat'
   l: [FPS, FUN, NUMPAD, SYMBOL, MOUSE, QWERTY]
