@@ -51,11 +51,11 @@ layers:
   - {t: '$$mdi:backspace$$', h: MEDIA}
   MOUSE:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - END
+  - Ctl+G
+  - Ctl+H
+  - Ctl+Z
+  - Ctl+Sft+Z
+  - Ctl+F
   - Ctl+$$mdi:arrow-up-bold$$
   - Sft+Ctl+V
   - $$mdi:mouse-left-click-outline$$
@@ -64,11 +64,11 @@ layers:
   - PgUp
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - END
-  - AC HOME
-  - AC HOME
+  - Ctl+A
+  - Sft+X
+  - Ctl+C
+  - Ctl+V
+  - Ctl+R
   - Ctl+$$mdi:arrow-left-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+$$mdi:arrow-right-bold$$
@@ -79,11 +79,11 @@ layers:
   - PgDn
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Z
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
-  - Ins
+  - Ctl+N
+  - Ctl+O
+  - Ctl+S
+  - Ctl+T
+  - Ctl+P
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+$$mdi:arrow-down-bold$$
   - '&msc MOVE_X(-20)'
