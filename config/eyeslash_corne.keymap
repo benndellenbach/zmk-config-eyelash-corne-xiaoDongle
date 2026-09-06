@@ -206,7 +206,7 @@
         Mouselock {
             bindings = <&tog 1>;
             key-positions = <43 17>;
-            layers = <1 3 2 4 7 0>;
+            layers = <1 3 2 4 0>;
         };
 
         FunLock {
@@ -236,25 +236,25 @@
         LDefault {
             bindings = <&to 0>;
             key-positions = <13 17>;
-            layers = <0 1 2 3 4 7 5>;
+            layers = <0 1 2 3 4 5>;
         };
 
         RDefault {
             bindings = <&to 0>;
             key-positions = <23 27>;
-            layers = <7 1 2 0 3 4 5 6>;
+            layers = <1 2 0 3 4 5 6>;
         };
 
         LRPT {
             bindings = <&key_repeat>;
             key-positions = <31 32>;
-            layers = <7 2 3 4 1 0>;
+            layers = <2 3 4 1 0>;
         };
 
         RRPT {
             bindings = <&key_repeat>;
             key-positions = <37 38>;
-            layers = <7 2 3 4 1 0>;
+            layers = <2 3 4 1 0>;
         };
     };
 
@@ -281,7 +281,7 @@
             display-name = "QWERTY";
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E      &kp R        &kp T                           &kp UP               &kp Y         &kp U        &kp I            &kp O    &kp P     &kp DELETE
-&td0       &kp A  &kp S  &kp D      &kp F        &kp G                 &kp LEFT  &trans    &kp RIGHT  &kp H         &kp J        &kp K            &kp L    &kp SEMI  &kp SQT
+&td0       &kp A  &kp S  &kp D      &kp F        &kp G                 &kp LEFT  &to 6     &kp RIGHT  &kp H         &kp J        &kp K            &kp L    &kp SEMI  &kp SQT
 &kp LCTRL  &kp Z  &kp X  &kp C      &kp V        &kp B        &to 6              &kp DOWN             &kp N         &kp M        &kp COMMA        &kp DOT  &kp FSLH  &kp ESC
                          &lt 4 TAB  &lt 1 SPACE  &lt 3 ENTER                                          &lt 2 RETURN  &lt 6 SPACE  &lt 5 BACKSPACE
             >;
@@ -340,9 +340,9 @@
         MediaControls {
             display-name = "MEDIA";
             bindings = <
-&trans  &trans  &trans  &trans        &trans        &rgb_ug RGB_SPI                                      &rgb_ug RGB_SAI                   &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans  &trans
-&trans  &trans  &trans  &trans        &bt BT_NXT    &rgb_ug RGB_SPD                     &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &trans  &bt BT_SEL 3  &bt BT_SEL 4    &trans        &trans  &trans
-&trans  &trans  &trans  &trans        &trans        &trans           &rgb_ug RGB_TOG                     &rgb_ug RGB_SAD                   &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &trans  &trans
+&trans  &trans  &trans  &trans        &trans        &rgb_ug RGB_SPI                                      &rgb_ug RGB_SAI                   &trans  &bt BT_SEL 3  &bt BT_SEL 4  &trans          &trans  &trans
+&trans  &trans  &trans  &trans        &bt BT_NXT    &rgb_ug RGB_SPD                     &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &trans  &trans
+&trans  &trans  &trans  &trans        &trans        &trans           &rgb_ug RGB_TOG                     &rgb_ug RGB_SAD                   &trans  &trans        &bt BT_CLR    &bt BT_CLR_ALL  &trans  &trans
                         &out OUT_USB  &out OUT_TOG  &out OUT_BLE                                                                           &trans  &trans        &trans
             >;
 
@@ -352,22 +352,10 @@
         Gamepad {
             display-name = "GAMING";
             bindings = <
-&kp T  &kp TAB    &kp Q  &kp W    &kp E      &kp R                              &kp UP               &trans          &mkp MB4        &mmv MOVE_UP     &mkp MB5         &trans           &trans
-&kp G  &td0       &kp A  &kp S    &kp D      &kp F                    &kp LEFT  &tog 7    &kp RIGHT  &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans           &trans
-&kp B  &kp LCTRL  &kp Z  &kp X    &kp C      &kp V      &kp K_MUTE              &kp DOWN             &msc SCRL_LEFT  &msc SCRL_DOWN  &mkp MB3         &msc SCRL_UP     &msc SCRL_RIGHT  &trans
+&kp T  &kp TAB    &kp Q  &kp W    &kp E      &kp R                              &kp UP               &trans          &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans           &trans
+&kp G  &td0       &kp A  &kp S    &kp D      &kp F                    &kp LEFT  &to 0     &kp RIGHT  &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans           &trans
+&kp B  &kp LCTRL  &kp Z  &kp X    &kp C      &kp V      &kp K_MUTE              &kp DOWN             &msc SCRL_LEFT  &msc SCRL_DOWN  &mkp MB3        &msc SCRL_UP     &msc SCRL_RIGHT  &trans
                          &kp TAB  &kp SPACE  &kp ENTER                                               &mkp RCLK       &mkp LCLK       &kp BACKSPACE
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-        };
-
-        FPS {
-            display-name = "RPG";
-            bindings = <
-&trans  &trans  &kp E   &kp W    &trans     &trans                                   &kp UP_ARROW             &trans          &mkp MB4        &mmv MOVE_UP     &mkp MB5         &trans           &trans
-&trans  &kp F   &kp A   &kp S    &kp D      &trans                   &kp LEFT_ARROW  &tog 7        &kp RIGHT  &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans           &trans
-&trans  &trans  &trans  &trans   &trans     &trans     &kp K_MUTE                    &kp DOWN                 &msc SCRL_LEFT  &msc SCRL_DOWN  &mkp MB3         &msc SCRL_UP     &msc SCRL_RIGHT  &trans
-                        &kp TAB  &kp SPACE  &kp ENTER                                                         &mkp RCLK       &mkp LCLK       &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
