@@ -352,17 +352,17 @@
         Gamepad {
             display-name = "GAMING";
             bindings = <
-&kp T  &kp TAB    &kp Q  &kp W    &kp E      &kp R                              &kp UP               &mkp MB1   &kp F7     &mmv MOVE_UP   &kp F9  &kp F12  &trans
-&kp G  &td0       &kp A  &kp S    &kp D      &kp F                    &kp LEFT  &tog 7    &kp RIGHT  &trans     &kp F4     &kp F5         &kp F6  &kp F11  &trans
-&kp B  &kp LCTRL  &kp Z  &kp X    &kp C      &kp V      &kp K_MUTE              &kp DOWN             &trans     &kp F1     &kp F2         &kp F3  &kp F10  &trans
-                         &kp TAB  &kp SPACE  &kp ENTER                                               &kp ENTER  &kp SPACE  &kp BACKSPACE
+&kp T  &kp TAB    &kp Q  &kp W    &kp E      &kp R                              &kp UP               &trans          &mkp MB4        &mmv MOVE_UP     &mkp MB5         &trans           &trans
+&kp G  &td0       &kp A  &kp S    &kp D      &kp F                    &kp LEFT  &tog 7    &kp RIGHT  &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans           &trans
+&kp B  &kp LCTRL  &kp Z  &kp X    &kp C      &kp V      &kp K_MUTE              &kp DOWN             &msc SCRL_LEFT  &msc SCRL_DOWN  &mkp MB3         &msc SCRL_UP     &msc SCRL_RIGHT  &trans
+                         &kp TAB  &kp SPACE  &kp ENTER                                               &mkp RCLK       &mkp LCLK       &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         FPS {
-            display-name = "FPS";
+            display-name = "RPG";
             bindings = <
 &trans  &trans  &kp E   &kp W    &trans     &trans                                   &kp UP_ARROW             &trans          &mkp MB4        &mmv MOVE_UP     &mkp MB5         &trans           &trans
 &trans  &kp F   &kp A   &kp S    &kp D      &trans                   &kp LEFT_ARROW  &tog 7        &kp RIGHT  &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans           &trans
