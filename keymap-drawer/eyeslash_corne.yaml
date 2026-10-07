@@ -43,7 +43,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
-  - LGUI
+  - {t: '$$mdi:backspace-reverse-outline$$', h: Sym}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:navigation-variant$$'}
   - {t: '$$mdi:keyboard-return$$', h: Num}
   - $$mdi:keyboard-return$$
@@ -56,7 +56,7 @@ layers:
   - Z
   - Z
   - F
-  - $$mdi:arrow-up-bold$$
+  - Ctl+$$mdi:arrow-up-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB4'
   - $$mdi:menu-up$$
@@ -69,9 +69,9 @@ layers:
   - C
   - V
   - R
-  - $$mdi:arrow-left-bold$$
+  - Ctl+$$mdi:arrow-left-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:arrow-right-bold$$
+  - Ctl+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:menu-left$$
   - $$mdi:menu-down$$
@@ -85,7 +85,7 @@ layers:
   - T
   - P
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:arrow-down-bold$$
+  - Ctl+$$mdi:arrow-down-bold$$
   - '&msc SCRL_LEFT'
   - $$mdi:pan-down$$
   - '&mkp MB3'
@@ -133,7 +133,7 @@ layers:
   - RGB BRD
   - RGB HUI
   - RGB HUD
-  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB TOG
   - $$mdi:menu-down$$
   - BT CLR ALL
   - {t: BT, h: '0'}
@@ -141,9 +141,9 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:volume-low$$
-  - $$mdi:volume-high$$
-  - MUTE
+  - OUT USB
+  - OUT TOG
+  - OUT BLE
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -170,7 +170,7 @@ layers:
   - $$mdi:menu-left$$
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:menu-right$$
-  - $$mdi:keyboard-space$$
+  - {t: '=', s: +}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
@@ -190,12 +190,12 @@ layers:
   - {t: '3', s: '#'}
   - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:volume-low$$
-  - $$mdi:volume-high$$
-  - {t: MUTE, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - $$mdi:keyboard-return$$
   - {t: '0', s: )}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', type: backspace}
   Game:
   - T
   - $$mdi:keyboard-tab$$
@@ -245,6 +245,55 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
+  Sym:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - $$mdi:menu-up$$
+  - Sft+{
+  - Sft+&
+  - Sft+STAR
+  - Sft+(
+  - Sft+}
+  - Sft+}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - $$mdi:menu-left$$
+  - $$mdi:mouse-left-click-outline$$
+  - $$mdi:menu-right$$
+  - +
+  - Sft+$
+  - Sft+%
+  - Sft+^
+  - COLON
+  - {t: '=', s: +}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB EFF
+  - RGB BRI
+  - RGB BRD
+  - RGB HUI
+  - RGB HUD
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:menu-down$$
+  - {t: '-', s: _}
+  - Sft+!
+  - Sft+!
+  - Sft+@
+  - {t: \, s: '|'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-return$$
+  - Sft+)
+  - $$mdi:keyboard-space$$
 combos:
 - p: [23, 24]
   k: $$mdi:keyboard-esc$$
