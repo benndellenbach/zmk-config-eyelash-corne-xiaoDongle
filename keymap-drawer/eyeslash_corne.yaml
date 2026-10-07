@@ -35,7 +35,7 @@ layers:
   - C
   - V
   - B
-  - $$mdi:keyboard-space$$
+  - {t: Game, h: toggle}
   - $$mdi:arrow-down-bold$$
   - N
   - M
@@ -171,7 +171,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:menu-right$$
   - $$mdi:keyboard-space$$
-  - {t: '=', s: +}
+  - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - Sft+COLON
@@ -231,7 +231,7 @@ layers:
   - X
   - C
   - V
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: QWERTY, h: toggle}
   - {t: '3', s: '#'}
   - '&msc SCRL_LEFT'
   - $$mdi:pan-down$$
