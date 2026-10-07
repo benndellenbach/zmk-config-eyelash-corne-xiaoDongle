@@ -1,4 +1,4 @@
-manifest:
+ manifest:
     remotes:
         - name: zmkfirmware
           url-base: https://github.com/zmkfirmware
@@ -10,6 +10,8 @@ manifest:
           url-base: https://github.com/tokyo2006
         - name: englmaxi
           url-base: https://github.com/englmaxi
+        - name: nexus
+          url-base: https://github.com/vaibhav8600-rgb
     projects:
         - name: zmk
           remote: zmkfirmware
@@ -21,8 +23,6 @@ manifest:
         - name: zmk-dongle-display
           remote: englmaxi
           revision: v0.3
-        # config/west.yml
-
         - name: nexus
           remote: nexus          # url-base: https://github.com/vaibhav8600-rgb
           revision: v1.0.0
