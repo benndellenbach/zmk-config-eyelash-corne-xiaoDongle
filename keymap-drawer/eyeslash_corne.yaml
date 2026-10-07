@@ -174,7 +174,7 @@ layers:
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
-  - Sft+COLON
+  - COLON
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB EFF
@@ -265,7 +265,7 @@ combos:
 - p: [40, 41]
   k: '|'
 - p: [15, 16]
-  k: $$mdi:apple-keyboard-shift$$
+  k: '&td0'
   l: [QWERTY, Num]
 - p: [14, 17]
   k: LEFT WIN
@@ -276,7 +276,7 @@ combos:
   k: $$mdi:apple-keyboard-option$$
   l: [QWERTY, Num]
 - p: [24, 25]
-  k: $$mdi:apple-keyboard-shift$$
+  k: '&td0'
   l: [QWERTY, Num]
 - p: [23, 26]
   k: LEFT WIN
