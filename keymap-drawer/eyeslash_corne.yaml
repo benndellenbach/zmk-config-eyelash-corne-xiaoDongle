@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyeslash_corne}
 layers:
   QWERTY:
-  - {t: '$$mdi:keyboard-esc$$', h: '`'}
+  - {t: '$$mdi:keyboard-tab$$', h: '`'}
   - Q
   - W
   - E
@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$', type: backspace}
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
+  - '&td0'
   - A
   - S
   - D
@@ -29,7 +29,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
@@ -42,62 +42,62 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:keyboard-esc$$
   - LGUI
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:navigation-variant$$'}
   - $$mdi:keyboard-return$$
   - $$mdi:keyboard-return$$
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:symbol$$'}
-  - $$mdi:apple-keyboard-option$$
-  NUMBER:
+  - {t: '$$mdi:backspace$$', type: backspace}
+  mouse:
   - {t: '$$mdi:transfer$$', type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
+  - G
+  - H
+  - Z
+  - Z
+  - F
+  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mkp MB4'
   - $$mdi:menu-up$$
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: /, s: '?'}
-  - '*'
-  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$', type: backspace}
+  - '&mkp MB5'
   - {t: '$$mdi:transfer$$', type: trans}
-  - ^
-  - '&'
-  - '*'
-  - {t: '-', s: _}
-  - {t: '=', s: +}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - A
+  - X
+  - C
+  - V
+  - R
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:menu-left$$
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:menu-right$$
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - '6'
-  - {t: '-', s: _}
-  - +
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: AltGr+5, s: AltGr+%}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - _
-  - +
-  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:menu-down$$
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - .
-  - {t: '=', s: +}
+  - $$mdi:menu-right$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - N
+  - O
+  - S
+  - T
+  - P
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-down-bold$$
+  - '&msc SCRL_LEFT'
+  - $$mdi:pan-down$$
+  - '&mkp MB3'
+  - $$mdi:pan-up$$
+  - '&msc SCRL_RIGHT'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '0', s: )}
-  - {t: ',', s: <}
+  - $$mdi:mouse-right-click-outline$$
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   fn:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
@@ -106,27 +106,27 @@ layers:
   - F4
   - F5
   - $$mdi:menu-up$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - F6
   - F7
   - F8
   - F9
   - F10
-  - F11
-  - {t: '$$mdi:transfer$$', type: trans}
-  - AltGr+Q
-  - AltGr+S
-  - AltGr+P
-  - AltGr+Y
-  - $$mdi:printer-outline$$
   - $$mdi:menu-left$$
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:menu-right$$
+  - BT CLR
   - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F12
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - RGB TOG
   - RGB EFF
   - RGB BRI
@@ -135,12 +135,12 @@ layers:
   - RGB HUD
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:menu-down$$
-  - $$mdi:menu-left$$
-  - $$mdi:menu-down$$
-  - $$mdi:menu-up$$
-  - $$mdi:menu-right$$
-  - '&mkp MB1'
-  - '&mkp MB2'
+  - BT CLR ALL
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
   - MUTE
