@@ -18,10 +18,6 @@ manifest:
         - name: nice-view-gem
           remote: m165437
           revision: v0.3.0
-
-        - name: prospector-zmk-module
-          remote: tokyo2006
-          revision: change_spi2
         - name: zmk-dongle-display
           remote: englmaxi
           revision: v0.3
