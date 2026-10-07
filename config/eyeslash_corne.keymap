@@ -181,7 +181,7 @@
         Function {
             display-name = "fn";
             bindings = <
-&trans           &kp F1           &kp F2           &kp F3           &kp F4           &kp F5                                     &mmv MOVE_UP                     &trans          &trans          &kp UP_ARROW  &trans        &trans        &trans
+&trans           &kp F1           &kp F2           &kp F3           &kp F4           &kp F5                                     &mmv MOVE_UP                     &trans          &trans          &kp UP_ARROW  &trans        &trans        &nexus_action NEXUS_ACT_REMOTE_TOGGLE   // phone input on / off (remembered)s
 &trans           &kp F6           &kp F7           &kp F8           &kp F9           &kp F10                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bt BT_CLR      &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT     &trans        &trans
 &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &trans                    &mmv MOVE_DOWN                   &bt BT_CLR_ALL  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans
                                                    &kp C_VOL_DN     &kp C_VOL_UP     &kp K_MUTE                                                                  &trans          &trans          &trans
