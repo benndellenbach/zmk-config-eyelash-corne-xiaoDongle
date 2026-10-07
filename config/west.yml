@@ -21,5 +21,10 @@ manifest:
         - name: zmk-dongle-display
           remote: englmaxi
           revision: v0.3
+        # config/west.yml
+
+        - name: nexus
+          remote: nexus          # url-base: https://github.com/vaibhav8600-rgb
+          revision: v1.0.0
     self:
         path: config
