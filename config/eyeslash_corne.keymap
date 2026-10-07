@@ -106,7 +106,7 @@
         };
 
         LeftShift {
-            bindings = <&kp LEFT_SHIFT>;
+            bindings = <&td0>;
             key-positions = <15 16>;
             layers = <0 3>;
         };
@@ -129,7 +129,7 @@
         };
 
         RightShift {
-            bindings = <&kp LEFT_SHIFT>;
+            bindings = <&td0>;
             key-positions = <24 25>;
             layers = <0 3>;
         };
@@ -193,9 +193,9 @@
         Numpad {
             display-name = "Num";
             bindings = <
-&trans  &kp F1           &kp F2           &kp F3           &kp F4           &kp F5                                     &mmv MOVE_UP                     &kp LBKT   &kp N7        &kp N8  &kp N9  &kp RBKT       &kp RBKT
-&trans  &kp F6           &kp F7           &kp F8           &kp F9           &kp F10                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp SPACE  &kp NUMBER_4  &kp N5  &kp N6  &kp LS(COLON)  &kp EQUAL
-&trans  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &trans                    &mmv MOVE_DOWN                   &kp MINUS  &kp N1        &kp N2  &kp N3  &kp FSLH       &trans
+&trans  &kp F1           &kp F2           &kp F3           &kp F4           &kp F5                                     &mmv MOVE_UP                     &kp LBKT   &kp N7        &kp N8  &kp N9  &kp RBKT   &kp RBKT
+&trans  &kp F6           &kp F7           &kp F8           &kp F9           &kp F10                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp SPACE  &kp NUMBER_4  &kp N5  &kp N6  &kp COLON  &kp EQUAL
+&trans  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &trans                    &mmv MOVE_DOWN                   &kp MINUS  &kp N1        &kp N2  &kp N3  &kp FSLH   &trans
                                           &kp C_VOL_DN     &kp C_VOL_UP     &kp K_MUTE                                                                  &trans     &kp N0        &trans
             >;
 
