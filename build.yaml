@@ -39,6 +39,12 @@ include:
   - board: nice_nano_v2
     shield: eyeslash_corne_peripheral_right nice_view_adapter nice_view_gem
     artifact-name: nano_eyeslash_right
+    
+    # Nexus implementation
+  - board: seeeduino_xiao_ble
+    shield: nexus_dongle corne
+    snippet: studio-rpc-usb-uart
+    artifact-name: nexus_dongle
 
   # reset_settings
   - board: nice_nano_v2
