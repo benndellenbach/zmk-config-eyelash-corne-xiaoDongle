@@ -178,8 +178,8 @@ layers:
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB EFF
-  - RGB BRI
-  - RGB BRD
+  - RGB SAI
+  - RGB SAD
   - RGB HUI
   - RGB HUD
   - RGB TOG
