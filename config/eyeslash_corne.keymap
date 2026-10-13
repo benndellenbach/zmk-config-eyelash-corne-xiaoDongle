@@ -196,7 +196,7 @@
             bindings = <
 &trans  &kp F1           &kp F2           &kp F3           &kp F4           &kp F5                                              &mmv MOVE_UP                     &kp LBKT   &kp N7        &kp N8         &kp N9  &kp RBKT   &kp RBKT
 &trans  &kp F6           &kp F7           &kp F8           &kp F9           &kp F10                             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp EQUAL  &kp NUMBER_4  &kp N5         &kp N6  &kp COLON  &kp EQUAL
-&trans  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_TOG                    &mmv MOVE_DOWN                   &kp MINUS  &kp N1        &kp N2         &kp N3  &kp FSLH   &trans
+&trans  &rgb_ug RGB_EFF  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_TOG                    &mmv MOVE_DOWN                   &kp MINUS  &kp N1        &kp N2         &kp N3  &kp FSLH   &trans
                                           &trans           &trans           &trans                                                                               &kp ENTER  &kp N0        &kp BACKSPACE
             >;
 
