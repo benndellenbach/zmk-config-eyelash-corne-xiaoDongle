@@ -170,10 +170,10 @@
         Mouse {
             display-name = "mouse";
             bindings = <
-&trans  &kp G  &kp H  &kp Z   &kp Z   &kp F                           &kp LC(UP_ARROW)                 &trans          &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans           &trans
-&trans  &kp A  &kp X  &kp C   &kp V   &kp R             &kp LC(LEFT)  &trans            &kp LC(RIGHT)  &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans           &none
-&trans  &kp N  &kp O  &kp S   &kp T   &kp P   &trans                  &kp LC(DOWN)                     &msc SCRL_LEFT  &msc SCRL_DOWN  &mkp MB3        &msc SCRL_UP     &msc SCRL_RIGHT  &none
-                      &trans  &trans  &trans                                                           &mkp RCLK       &mkp LCLK       &kp BACKSPACE
+&trans  &kp G      &kp H      &kp UP_ARROW  &kp Z      &kp F                           &kp LC(UP_ARROW)                 &trans          &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans           &trans
+&trans  &kp A      &kp LEFT   &kp DOWN      &kp RIGHT  &kp R             &kp LC(LEFT)  &trans            &kp LC(RIGHT)  &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans           &none
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)     &kp LC(V)  &kp P   &trans                  &kp LC(DOWN)                     &msc SCRL_LEFT  &msc SCRL_DOWN  &mkp MB3        &msc SCRL_UP     &msc SCRL_RIGHT  &none
+                              &trans        &trans     &trans                                                           &mkp RCLK       &mkp LCLK       &kp BACKSPACE
             >;
 
             sensor-bindings = <&scroll_encoder>;
