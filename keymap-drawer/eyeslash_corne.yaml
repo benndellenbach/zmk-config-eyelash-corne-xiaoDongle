@@ -53,7 +53,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - G
   - H
-  - Z
+  - $$mdi:arrow-up-bold$$
   - Z
   - F
   - Ctl+$$mdi:arrow-up-bold$$
@@ -65,9 +65,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - A
-  - X
-  - C
-  - V
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - R
   - Ctl+$$mdi:arrow-left-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -79,10 +79,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - N
-  - O
-  - S
-  - T
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
   - P
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+$$mdi:arrow-down-bold$$
