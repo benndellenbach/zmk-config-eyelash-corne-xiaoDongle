@@ -182,7 +182,7 @@ layers:
   - RGB BRD
   - RGB HUI
   - RGB HUD
-  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB TOG
   - $$mdi:menu-down$$
   - {t: '-', s: _}
   - {t: '1', s: '!'}
@@ -226,7 +226,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - B
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:keyboard-esc$$
   - Z
   - X
   - C
@@ -239,7 +239,7 @@ layers:
   - $$mdi:pan-up$$
   - '&msc SCRL_RIGHT'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:keyboard-tab$$
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-return$$
   - $$mdi:mouse-right-click-outline$$
