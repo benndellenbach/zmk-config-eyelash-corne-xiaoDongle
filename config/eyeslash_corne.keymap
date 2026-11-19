@@ -119,13 +119,13 @@
         LeftShift {
             bindings = <&td0>;
             key-positions = <15 16>;
-            layers = <0 4>;
+            layers = <0 3>;
         };
 
         LeftGUI {
             bindings = <&kp LEFT_WIN>;
             key-positions = <14 17>;
-            layers = <0 4>;
+            layers = <0 3>;
         };
 
         RightControl {
@@ -136,13 +136,13 @@
         LeftAlt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <16 17>;
-            layers = <0 4>;
+            layers = <0 3>;
         };
 
         RightShift {
             bindings = <&td0>;
             key-positions = <24 25>;
-            layers = <0 4>;
+            layers = <0 3>;
         };
 
         RightGUI {
@@ -158,7 +158,7 @@
         LeftControl {
             bindings = <&kp LCTRL>;
             key-positions = <15 14>;
-            layers = <0 4>;
+            layers = <0 3>;
         };
     };
 
@@ -168,25 +168,13 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&mt GRAVE TAB     &kp Q  &kp W  &kp E         &kp R        &kp T                                 &kp UP                &kp Y      &kp U        &kp I          &kp O    &kp P     &back_del
-&td0              &kp A  &kp S  &kp D         &kp F        &kp G                       &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp J        &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V        &kp B        &tog_to 5 1              &kp DOWN              &kp N      &kp M        &kp COMMA      &kp DOT  &kp FSLH  &kp ESCAPE
-                                &lt 6 DELETE  &lt 2 SPACE  &lt 4 ENTER                                                 &kp ENTER  &lt 3 SPACE  &kp BACKSPACE
+&mt GRAVE TAB     &kp Q  &kp W  &kp E         &kp R        &kp T                           &kp UP                &kp Y      &kp U        &kp I          &kp O    &kp P     &back_del
+&td0              &kp A  &kp S  &kp D         &kp F        &kp G                 &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp J        &kp K          &kp L    &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V        &kp B        &to 4              &kp DOWN              &kp N      &kp M        &kp COMMA      &kp DOT  &kp FSLH  &kp ESCAPE
+                                &lt 5 DELETE  &lt 1 SPACE  &lt 3 ENTER                                           &kp ENTER  &lt 2 SPACE  &kp BACKSPACE
             >;
 
-            sensor-bindings = <&inc_dec_kp (C_VOLUME_UP) LS(C_VOL_DN)>;
-        };
-
-        q_work_layer {
-            display-name = "Q-Work";
-            bindings = <
-&mt GRAVE TAB     &kp Q  &kp W  &kp E         &kp R        &kp T                            &kp UP                &kp Y      &kp U        &kp I          &kp O    &kp P     &back_del
-&td0              &kp A  &kp S  &kp D         &kp F        &kp G                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp J        &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V        &kp B        &trans              &kp DOWN              &kp N      &kp M        &kp COMMA      &kp DOT  &kp FSLH  &kp ESCAPE
-                                &lt 6 DELETE  &lt 2 SPACE  &lt 4 ENTER                                            &kp ENTER  &lt 3 SPACE  &kp BACKSPACE
-            >;
-
-            sensor-bindings = <&inc_dec_kp (TAB) LS(TAB)>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         Mouse {
