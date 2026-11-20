@@ -200,10 +200,10 @@
         Function {
             display-name = "fn";
             bindings = <
-&rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &kp F7  &kp F8        &kp F9        &kp F12                                          &mmv MOVE_UP                     &trans          &trans          &kp UP_ARROW  &trans        &trans        &trans
-&rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp F4  &kp F5        &kp F6        &kp F11                          &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bt BT_CLR      &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT     &trans        &trans
-&rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &kp F1  &kp F2        &kp F3        &kp F10       &rgb_ug RGB_TOG                    &mmv MOVE_DOWN                   &bt BT_CLR_ALL  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans
-                                          &out OUT_USB  &out OUT_TOG  &out OUT_BLE                                                                      &trans          &trans          &trans
+&rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &kp F7  &kp F8        &kp F9        &kp F12                                          &mmv MOVE_UP                     &trans        &trans        &kp UP_ARROW  &trans        &trans          &trans
+&rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp F4  &kp F5        &kp F6        &kp F11                          &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
+&rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &kp F1  &kp F2        &kp F3        &kp F10       &rgb_ug RGB_TOG                    &mmv MOVE_DOWN                   &trans        &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &bt BT_CLR_ALL  &trans
+                                          &out OUT_USB  &out OUT_TOG  &out OUT_BLE                                                                      &trans        &trans        &trans
             >;
 
             sensor-bindings = <&rotary_hue>;
@@ -226,7 +226,7 @@
             bindings = <
 &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &kp F7  &kp F8        &kp F9        &kp F12                                          &mmv MOVE_UP                     &kp LBKT   &kp N7  &kp N8  &kp N9  &kp RBKT       &kp GRAVE
 &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp F4  &kp F5        &kp F6        &kp F11                          &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp COLON      &trans
-&rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &kp F1  &kp F2        &kp F3        &kp F10       &rgb_ug RGB_TOG                    &mmv MOVE_DOWN                   &kp MINUS  &kp N1  &kp N2  &kp N3  &kp BACKSLASH  &trans
+&rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &kp F1  &kp F2        &kp F3        &kp F10       &rgb_ug RGB_TOG                    &mmv MOVE_DOWN                   &kp MINUS  &kp N1  &kp N2  &kp N3  &kp BACKSLASH  &trans
                                           &out OUT_USB  &out OUT_TOG  &out OUT_BLE                                                                      &trans     &kp N0  &trans
             >;
 
@@ -238,7 +238,7 @@
             bindings = <
 &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &kp F7  &kp F8        &kp F9        &kp F12                                          &mmv MOVE_UP                     &kp RS(LBKT)   &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp RS(RBKT)       &kp RS(GRAVE)
 &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp F4  &kp F5        &kp F6        &kp F11                          &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RS(EQUAL)  &kp RS(N4)  &kp RS(N5)  &kp RS(N6)  &kp COLON          &trans
-&rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &kp F1  &kp F2        &kp F3        &kp F10       &rgb_ug RGB_TOG                    &mmv MOVE_DOWN                   &kp RS(MINUS)  &kp RS(N1)  &kp RS(N2)  &kp RS(N3)  &kp RS(BACKSLASH)  &trans
+&rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &kp F1  &kp F2        &kp F3        &kp F10       &rgb_ug RGB_TOG                    &mmv MOVE_DOWN                   &kp RS(MINUS)  &kp RS(N1)  &kp RS(N2)  &kp RS(N3)  &kp RS(BACKSLASH)  &trans
                                           &out OUT_USB  &out OUT_TOG  &out OUT_BLE                                                                      &trans         &kp RS(N0)  &trans
             >;
 
