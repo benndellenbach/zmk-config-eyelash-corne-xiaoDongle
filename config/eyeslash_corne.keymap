@@ -60,6 +60,16 @@
 
             label = "ROTARY_HUE";
         };
+
+        rgb_tap_hold: rgb_tap_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RGB_TAP_HOLD";
+            bindings = <&rgb_ug>, <&rgb_ug>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            flavor = "tap-preferred";
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -182,7 +192,7 @@
                                 &lt 5 DELETE  &lt 1 SPACE  &lt 4 ENTER                                           &lt 2 RETURN  &lt 1 SPACE  &kp BACKSPACE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp (TAB) LS(TAB)>;
         };
 
         Mouse {
@@ -194,7 +204,7 @@
                               &trans        &trans     &trans                                                                  &mkp RCLK       &mkp LCLK       &kp BACKSPACE
             >;
 
-            sensor-bindings = <&inc_dec_kp (TAB) LS(TAB)>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         Function {
@@ -224,10 +234,10 @@
         Numpad {
             display-name = "num";
             bindings = <
-&rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &kp F7  &kp F8        &kp F9        &kp F12                                          &mmv MOVE_UP                     &kp LBKT   &kp N7  &kp N8  &kp N9  &kp RBKT       &kp GRAVE
-&rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp F4  &kp F5        &kp F6        &kp F11                          &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp COLON      &trans
-&rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &kp F1  &kp F2        &kp F3        &kp F10       &rgb_ug RGB_TOG                    &mmv MOVE_DOWN                   &kp MINUS  &kp N1  &kp N2  &kp N3  &kp BACKSLASH  &trans
-                                          &out OUT_USB  &out OUT_TOG  &out OUT_BLE                                                                      &trans     &kp N0  &trans
+&rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &kp F7  &kp F8        &kp F9        &kp F12                                                        &mmv MOVE_UP                     &kp LBKT   &kp N7  &kp N8  &kp N9  &kp RBKT       &kp GRAVE
+&rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp F4  &kp F5        &kp F6        &kp F11                                        &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp COLON      &trans
+&rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &kp F1  &kp F2        &kp F3        &kp F10       &rgb_tap_hold RGB_EFF RGB_TOG                    &mmv MOVE_DOWN                   &kp MINUS  &kp N1  &kp N2  &kp N3  &kp BACKSLASH  &trans
+                                          &out OUT_USB  &out OUT_TOG  &out OUT_BLE                                                                                    &trans     &kp N0  &trans
             >;
 
             sensor-bindings = <&rotary_hue>;
