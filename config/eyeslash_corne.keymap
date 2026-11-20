@@ -127,13 +127,13 @@
         LeftShift {
             bindings = <&td0>;
             key-positions = <15 16>;
-            layers = <0 3>;
+            layers = <0>;
         };
 
         LeftGUI {
             bindings = <&kp LEFT_WIN>;
             key-positions = <14 17>;
-            layers = <0 3>;
+            layers = <0>;
         };
 
         RightControl {
@@ -144,13 +144,13 @@
         LeftAlt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <16 17>;
-            layers = <0 3>;
+            layers = <0>;
         };
 
         RightShift {
             bindings = <&td0>;
             key-positions = <24 25>;
-            layers = <0 3>;
+            layers = <0>;
         };
 
         RightGUI {
@@ -166,7 +166,7 @@
         LeftControl {
             bindings = <&kp LCTRL>;
             key-positions = <15 14>;
-            layers = <0 3>;
+            layers = <0>;
         };
     };
 
@@ -178,8 +178,8 @@
             bindings = <
 &mt GRAVE TAB     &kp Q  &kp W  &kp E         &kp R        &kp T                           &kp UP                &kp Y         &kp U        &kp I          &kp O    &kp P     &back_del
 &td0              &kp A  &kp S  &kp D         &kp F        &kp G                 &kp LEFT  &kp ENTER  &kp RIGHT  &kp H         &kp J        &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V        &kp B        &to 4              &kp DOWN              &kp N         &kp M        &kp COMMA      &kp DOT  &kp FSLH  &kp ESCAPE
-                                &lt 5 DELETE  &lt 1 SPACE  &lt 3 ENTER                                           &lt 2 RETURN  &lt 1 SPACE  &kp BACKSPACE
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V        &kp B        &to 3              &kp DOWN              &kp N         &kp M        &kp COMMA      &kp DOT  &kp FSLH  &kp ESCAPE
+                                &lt 5 DELETE  &lt 1 SPACE  &lt 4 ENTER                                           &lt 2 RETURN  &lt 1 SPACE  &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -209,18 +209,6 @@
             sensor-bindings = <&rotary_hue>;
         };
 
-        Numpad {
-            display-name = "Num";
-            bindings = <
-&trans  &kp F1           &kp F2           &kp F3           &kp F4           &kp F5                                              &mmv MOVE_UP                     &kp LBKT   &kp N7        &kp N8         &kp N9  &kp RBKT   &kp RBKT
-&trans  &kp F6           &kp F7           &kp F8           &kp F9           &kp F10                             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp EQUAL  &kp NUMBER_4  &kp N5         &kp N6  &kp COLON  &kp EQUAL
-&trans  &rgb_ug RGB_EFF  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_TOG                    &mmv MOVE_DOWN                   &kp MINUS  &kp N1        &kp N2         &kp N3  &kp FSLH   &trans
-                                          &trans           &trans           &trans                                                                               &kp ENTER  &kp N0        &kp BACKSPACE
-            >;
-
-            sensor-bindings = <&rgb_encoder>;
-        };
-
         Gaming {
             display-name = "Game";
             bindings = <
@@ -233,25 +221,25 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
-        Symbols {
-            display-name = "Sym";
+        Numpad {
+            display-name = "num";
             bindings = <
-&trans  &kp F1           &kp F2           &kp F3           &kp F4           &kp F5                                     &mmv MOVE_UP                     &kp LS(LBRC)   &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RBRC)  &kp LS(RBRC)
-&trans  &kp F6           &kp F7           &kp F8           &kp F9           &kp F10                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS       &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp COLON     &kp EQUAL
-&trans  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &trans                    &mmv MOVE_DOWN                   &kp RS(MINUS)  &kp LS(EXCL)  &kp LS(EXCL)   &kp LS(AT)     &kp BSLH      &trans
-                                          &trans           &trans           &trans                                                                      &kp ENTER      &kp LS(RPAR)  &kp SPACE
+&rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &kp F7  &kp F8        &kp F9        &kp F12                                          &mmv MOVE_UP                     &kp LBKT   &kp N7  &kp N8  &kp N9  &kp RBKT       &kp GRAVE
+&rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp F4  &kp F5        &kp F6        &kp F11                          &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp COLON      &trans
+&rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &kp F1  &kp F2        &kp F3        &kp F10       &rgb_ug RGB_TOG                    &mmv MOVE_DOWN                   &kp MINUS  &kp N1  &kp N2  &kp N3  &kp BACKSLASH  &trans
+                                          &out OUT_USB  &out OUT_TOG  &out OUT_BLE                                                                      &trans     &kp N0  &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&rotary_hue>;
         };
 
-        layer_6 {
-            display-name = "fn";
+        SymLayer {
+            display-name = "Sym";
             bindings = <
-&rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &kp F7  &kp F8        &kp F9        &kp F12                                          &mmv MOVE_UP                     &kp LBKT   &kp N7  &kp N8  &kp N9  &kp RBKT   &trans
-&rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp F4  &kp F5        &kp F6        &kp F11                          &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp COLON  &trans
-&rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &kp F1  &kp F2        &kp F3        &kp F10       &rgb_ug RGB_TOG                    &mmv MOVE_DOWN                   &kp MINUS  &kp N1  &kp N2  &kp N3  &kp SLASH  &trans
-                                          &out OUT_USB  &out OUT_TOG  &out OUT_BLE                                                                      &trans     &kp N0  &trans
+&rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &kp F7  &kp F8        &kp F9        &kp F12                                          &mmv MOVE_UP                     &kp RS(LBKT)   &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp RS(RBKT)       &kp RS(GRAVE)
+&rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp F4  &kp F5        &kp F6        &kp F11                          &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RS(EQUAL)  &kp RS(N4)  &kp RS(N5)  &kp RS(N6)  &kp COLON          &trans
+&rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &kp F1  &kp F2        &kp F3        &kp F10       &rgb_ug RGB_TOG                    &mmv MOVE_DOWN                   &kp RS(MINUS)  &kp RS(N1)  &kp RS(N2)  &kp RS(N3)  &kp RS(BACKSLASH)  &trans
+                                          &out OUT_USB  &out OUT_TOG  &out OUT_BLE                                                                      &trans         &kp RS(N0)  &trans
             >;
 
             sensor-bindings = <&rotary_hue>;
