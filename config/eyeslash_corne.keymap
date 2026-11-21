@@ -255,6 +255,7 @@
             >;
 
             sensor-bindings = <&rotary_hue>;
+            >;
         };
     };
 };
