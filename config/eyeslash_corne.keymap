@@ -313,4 +313,48 @@
 
         sym_layer {
             display-name = "Sym";
-            bindings =
+            bindings = <
+&trans  &kp TILDE          &kp F7  &kp F8  &kp F9  &kp F12                                &mmv MOVE_UP                     &kp RS(LBKT)   &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp RS(RBKT)       &kp RS(GRAVE)
+&trans  &kp DOUBLE_QUOTES  &kp F4  &kp F5  &kp F6  &kp F11                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RS(EQUAL)  &kp RS(N4)  &kp RS(N5)  &kp RS(N6)  &kp COLON          &trans
+&trans  &trans             &kp F1  &kp F2  &kp F3  &kp F10       &trans                    &mmv MOVE_DOWN                   &kp RS(MINUS)  &kp RS(N1)  &kp RS(N2)  &kp RS(N3)  &kp RS(BACKSLASH)  &trans
+                                           &trans  &trans  &trans                                                           &trans         &kp RS(N0)  &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+        };
+
+        system_layer {
+            display-name = "System";
+            bindings = <
+&none  &out OUT_USB   &out OUT_TOG   &out OUT_BLE   &none          &none                      &none                  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &none
+&none  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4      &none  &none  &none          &tog FULL        &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &none
+&none  &bt BT_CLR     &bt BT_PRV     &bt BT_NXT     &none          &to GAME          &none         &none            &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &none            &sys_reset       &bootloader      &none
+                                     &trans         &trans         &trans                                           &trans           &trans           &trans
+            >;
+
+            sensor-bindings = <&rgb_encoder>;
+        };
+
+        game_fn_layer {
+            display-name = "GameFn";
+            bindings = <
+&none  &kp N1   &kp N2  &kp N3  &kp N4  &kp N5                 &none                 &kp F1   &kp F2   &kp F3        &kp F4        &kp F5    &none
+&none  &kp N6   &kp N7  &kp N8  &kp N9  &kp N0         &none    &none    &none        &kp F6   &kp F7   &kp F8        &kp F9        &kp F10   &none
+&none  &kp ESC  &kp T   &kp B   &kp M   &kp I          &trans            &none        &kp F11  &kp F12  &kp C_VOL_DN  &kp C_VOL_UP  &to BASE  &none
+                                &trans  &kp ENTER  &kp LALT                           &trans   &trans   &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+        };
+
+        precise_layer {
+            display-name = "Precise";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans                                  &trans  &trans  &trans
+            >;
+        };
+    };
+};
